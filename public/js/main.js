@@ -1,8 +1,6 @@
 const burgerElement = document.querySelector('.burger');
 const navListElements = document.querySelectorAll('.dropdown--list--item');
-const navElement = document.querySelector('.nav');
-const headerElement = document.querySelector('.dropdown--list');
-const headerElement2 = document.querySelector('.header');
+const dropdownMenu = document.querySelector('.dropdown--list');
 const hrElements = document.querySelectorAll('hr');
 const burgerTop = document.querySelector('.burger--top');
 const burgerMiddle = document.querySelector('.burger--middle');
@@ -23,7 +21,7 @@ function openMenu() {
         burgerTop.style.top = '45%';
         burgerBottom.style.transform = 'rotateZ(-135deg)';
         burgerBottom.style.top = '45%';
-        headerElement.classList.add('activate');
+        dropdownMenu.classList.add('activate');
         counter++;
     }else {
         for(let i = 0; i < navListElements.length; i++) {
@@ -36,7 +34,7 @@ function openMenu() {
         burgerTop.style.top = '15%';
         burgerBottom.style.transform = 'rotateZ(0)';
         burgerBottom.style.top = '65%';
-        headerElement.classList.remove('activate');
+        dropdownMenu.classList.remove('activate');
         counter = 0;
     }
     
