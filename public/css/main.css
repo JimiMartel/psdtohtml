@@ -23,6 +23,7 @@ header {
     width: 100%;
     background-color: #fff;
     transition: height .3s ease-in;
+    touch-action: pan-x;
 }
 
 .main--container--head {
