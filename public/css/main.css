@@ -84,6 +84,7 @@ header {
 
 
 .dropdown--list li {
+    visibility: hidden;
     text-decoration: none;
     opacity: 0;
     list-style: none;
@@ -94,7 +95,7 @@ header {
 }
 
 .activate-links {
-    visibility: visible;
+    visibility: visible!important;
     opacity: 1!important;
 
 }
