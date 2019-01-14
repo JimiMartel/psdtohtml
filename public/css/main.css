@@ -274,7 +274,7 @@ hr {
     }
     
     .main{
-        padding: 0 5rem;
+        padding: 5rem;
     }
     .form--input--container {
         display: flex;
@@ -329,7 +329,7 @@ hr {
     }
 
     .main {
-        padding: 0 7rem;
+        padding: 10rem 7rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
