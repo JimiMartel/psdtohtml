@@ -18,18 +18,10 @@ body {
 }
 
 header {
-    position: relative;
     padding: 1.3rem;
     height: 6rem;
     background-color: #fff;
     transition: height .3s ease-in;
-}
-
-.activate {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 1000;
 }
 
 .main--container--head {
@@ -41,7 +33,6 @@ header {
 }
 
 .nav {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,14 +62,26 @@ header {
 }
 
 .dropdown--list {
-    margin-top: 8rem;
-    text-decoration: none;
-    text-align: center; 
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    background-color: #fff;
+    transition: all .3s ease-in;
+}
+
+.activate {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
 }
 
 
 .dropdown--list li {
-    visibility: hidden;
+    text-decoration: none;
     opacity: 0;
     list-style: none;
     font-size: 2.5rem;
@@ -88,12 +91,12 @@ header {
 }
 
 .activate-links {
+    visibility: visible;
     opacity: 1!important;
 
 }
 
 hr {
-    /* display: none; */
     opacity: 0;
     width: 200px;
     margin: 0 auto;
@@ -224,7 +227,6 @@ hr {
 
 .form--button {
     width: 100%;
-    position: relative;
 }
 
 .btn,
@@ -241,7 +243,6 @@ hr {
 }
 
 .btn:hover {
-    /* background-color: rgb(5, 190, 80); */
     background-color: rgb(55, 255, 145);
 }
 
